@@ -2,7 +2,14 @@ package com.ejemplo;
 
 public class ValidadorPrimo {
     public static boolean esPrimo(int numero) {
-        if (numero == 2 || numero == 3) return true;
-        return false;
+        if (numero <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }
