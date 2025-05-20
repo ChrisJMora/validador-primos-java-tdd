@@ -7,7 +7,6 @@ public class ValidadorPrimoTest {
 
     @Test
     public void testUnoNoEsPrimo() {
-        // 🚨 Falla porque ValidadorPrimo aún no existe
         assertFalse(ValidadorPrimo.esPrimo(1));
     }
 
@@ -15,4 +14,9 @@ public class ValidadorPrimoTest {
     public void testDosEsPrimo() {
         assertTrue(ValidadorPrimo.esPrimo(2));
     }
+
+    @Test
+    public void testTresEsPrimo() {
+        assertTrue(ValidadorPrimo.esPrimo(3));
     }
+}
