@@ -19,4 +19,14 @@ public class ValidadorPrimoTest {
     public void testTresEsPrimo() {
         assertTrue(ValidadorPrimo.esPrimo(3));
     }
+
+    @Test
+    public void testCuatroEsPrimo() {
+        assertFalse(ValidadorPrimo.esPrimo(4));
+    }
+
+    @Test
+    public void testCincoEsPrimo() {
+        assertTrue(ValidadorPrimo.esPrimo(5));
+    }
 }
