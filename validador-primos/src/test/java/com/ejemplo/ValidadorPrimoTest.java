@@ -10,4 +10,9 @@ public class ValidadorPrimoTest {
         // 🚨 Falla porque ValidadorPrimo aún no existe
         assertFalse(ValidadorPrimo.esPrimo(1));
     }
-}
+
+    @Test
+    public void testDosEsPrimo() {
+        assertTrue(ValidadorPrimo.esPrimo(2));
+    }
+    }
